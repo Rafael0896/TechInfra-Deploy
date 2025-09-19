@@ -24,27 +24,411 @@
 
 <body>
 
-<!-- Navbar -->
-<nav class="navbar" id="navbar">
-  <div class="nav-container">
-    <a href="#" class="logo">TechInfra Deploy</a>
-    <ul class="nav-links">
-      <li><a href="#inicio">Inicio</a></li>
-      <li><a href="#servicios">Servicios</a></li>
-      <li><a href="#expertise">Expertise</a></li>
-      <li><a href="#contacto">Contacto</a></li>
-    </ul>
-  </div>
-</nav>
+  <!-- Navbar -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#" class="logo">TechInfra Deploy</a>
+      <ul class="nav-links">
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#servicios">Servicios</a></li>
+        <li><a href="#expertise">Expertise</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </div>
+  </nav>
 
-<!-- Hero Section -->
-<section class="hero" id="inicio">
-  <div class="hero-content">
-    <h1>TechInfra Deploy</h1>
-    <p class="subtitle">Transformamos tu infraestructura tecnológica con soluciones empresariales de vanguardia en networking y sistemas</p>
-    <a href="#servicios" class="cta-button">Explorar Soluciones</a>
-  </div>
-</section>
+  <!-- Hero Section -->
+  <section class="hero" id="inicio">
+    <div class="hero-content">
+      <h1>TechInfra Deploy</h1>
+      <p class="subtitle">Transformamos tu infraestructura tecnológica con soluciones empresariales de vanguardia en networking y sistemas</p>
+      <a href="#servicios" class="cta-button">Explorar Soluciones</a>
+    </div>
+  </section>
+  <!-- Main Content -->
+  <main class="main-content" id="servicios">
+    <h2 class="section-title">Nuestras Especialidades Técnicas</h2>
+
+    <div class="accordion">
+      <!-- Sección 1: Plataforma y Sistema Operativo -->
+      <div class="accordion-item">
+        <div class="accordion-header" onclick="toggleAccordion(0)">
+          <div>
+            <h3 class="accordion-title">Arquitectura de Plataformas Empresariales</h3>
+            <p class="accordion-intro">Selección y optimización de sistemas operativos para infraestructura crítica. Especializados en Windows Server 2022 con enfoque en alta disponibilidad, seguridad y escalabilidad empresarial.</p>
+          </div>
+          <span class="accordion-icon">+</span>
+        </div>
+        <div class="accordion-content">
+          <div class="accordion-body">
+            <div class="content-section">
+              <h3>Plataforma Seleccionada: Windows Server 2022</h3>
+
+              <div class="highlight-box">
+                <strong>¿Por qué Windows Server 2022?</strong><br>
+                Nuestra recomendación se basa en análisis técnico profundo considerando compatibilidad empresarial, soporte técnico robusto, escalabilidad probada y características avanzadas de protección y cumplimiento normativo.
+              </div>
+
+              <h4>Características Técnicas Esenciales</h4>
+
+              <div class="tech-specs">
+                <div class="spec-item">
+                  <strong>Requisitos Mínimos:</strong><br>
+                  • Procesador Intel Xeon/AMD EPYC 64-bits<br>
+                  • RAM: 16 GB mínimo (32 GB recomendado)<br>
+                  • Almacenamiento: 500 GB en RAID<br>
+                  • NIC: Dual Gigabit Ethernet
+                </div>
+                <div class="spec-item">
+                  <strong>Servicios de Red Integrados:</strong><br>
+                  • Active Directory Domain Services<br>
+                  • DNS con integración AD<br>
+                  • DHCP centralizado<br>
+                  • Network Policy Server (NPS)
+                </div>
+              </div>
+
+              <h4>Capacidades de Virtualización</h4>
+              <p>Hyper-V permite virtualización de servidores, optimización de recursos, creación de redes virtuales aisladas y migración en vivo de máquinas virtuales con integración SDN (Software Defined Networking).</p>
+
+              <h4>Seguridad Empresarial</h4>
+              <ul>
+                <li><strong>Windows Defender Firewall:</strong> Reglas granulares por perfil de red</li>
+                <li><strong>BitLocker:</strong> Cifrado de datos en reposo</li>
+                <li><strong>IPSec:</strong> Comunicaciones seguras extremo a extremo</li>
+                <li><strong>Certificados Digitales:</strong> Autenticación basada en PKI</li>
+              </ul>
+
+              <h4>Alta Disponibilidad y Recuperación</h4>
+              <p>Implementamos Windows Server Failover Clustering, Network Load Balancing (NLB), Storage Spaces Direct para almacenamiento distribuido, y Windows Server Backup con Volume Shadow Copy Service para recuperación granular.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Sección 2: Organizaciones de Estándares -->
+      <div class="accordion-item">
+        <div class="accordion-header" onclick="toggleAccordion(1)">
+          <div>
+            <h3 class="accordion-title">Cumplimiento de Estándares Internacionales</h3>
+            <p class="accordion-intro">Garantizamos interoperabilidad y sostenibilidad mediante adherencia a estándares establecidos por IEEE, IETF, ITU-T, ISO y ANSI. Protegemos su inversión tecnológica a largo plazo.</p>
+          </div>
+          <span class="accordion-icon">+</span>
+        </div>
+        <div class="accordion-content">
+          <div class="accordion-body">
+            <div class="content-section">
+              <h3>Organizaciones Reguladoras Clave</h3>
+
+              <h4>IEEE - Institute of Electrical and Electronics Engineers</h4>
+              <div class="highlight-box">
+                <strong>Estándares Críticos Implementados:</strong><br>
+                • IEEE 802.3 (Ethernet): Especificaciones desde 10 Mbps hasta 400 Gbps<br>
+                • IEEE 802.11 (WiFi): WiFi 5 (802.11ac) y WiFi 6 (802.11ax)<br>
+                • IEEE 802.1Q (VLANs): Segmentación virtual de redes
+              </div>
+
+              <h4>IETF - Internet Engineering Task Force</h4>
+              <p>Implementamos protocolos fundamentales definidos en RFCs críticos:</p>
+              <ul>
+                <li><strong>RFC 791 (IP):</strong> Protocolo base para enrutamiento, IPv4 e IPv6</li>
+                <li><strong>RFC 793 (TCP):</strong> Protocolo confiable con control de flujo</li>
+                <li><strong>RFC 1035 (DNS):</strong> Sistema de resolución de nombres jerárquico</li>
+                <li><strong>RFC 2131 (DHCP):</strong> Asignación automática de configuración IP</li>
+              </ul>
+
+              <h4>ITU-T - International Telecommunication Union</h4>
+              <div class="tech-specs">
+                <div class="spec-item">
+                  <strong>Serie G.984 (GPON):</strong><br>
+                  Estándares para fibra óptica pasiva hasta el usuario, implementados en conexiones de alta velocidad con proveedores ISP.
+                </div>
+                <div class="spec-item">
+                  <strong>H.323 y H.264:</strong><br>
+                  Protocolos para videoconferencia y streaming, aplicados en sistemas de comunicación unificada.
+                </div>
+              </div>
+
+              <h4>ISO - International Organization for Standardization</h4>
+              <ul>
+                <li><strong>ISO/IEC 7498-1 (Modelo OSI):</strong> Framework arquitectónico de 7 capas</li>
+                <li><strong>ISO/IEC 27001:</strong> Gestión de seguridad de la información</li>
+                <li><strong>ISO/IEC 20000:</strong> Gestión de servicios de TI</li>
+              </ul>
+
+              <h4>Beneficios de la Estandarización</h4>
+              <div class="highlight-box">
+                • <strong>Interoperabilidad:</strong> Dispositivos de diferentes fabricantes funcionan cohesivamente<br>
+                • <strong>Escalabilidad:</strong> Expansión futura sin cambios arquitectónicos mayores<br>
+                • <strong>Soporte:</strong> Amplia base de conocimiento y soporte técnico especializado<br>
+                • <strong>Inversión Protegida:</strong> Tecnologías que mantienen relevancia a largo plazo
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Sección 3: Protocolos de Comunicación -->
+      <div class="accordion-item">
+        <div class="accordion-header" onclick="toggleAccordion(2)">
+          <div>
+            <h3 class="accordion-title">Arquitectura de Protocolos de Comunicación</h3>
+            <p class="accordion-intro">Optimización estratégica entre TCP y UDP según requisitos específicos. TCP para aplicaciones críticas que demandan confiabilidad, UDP para servicios de tiempo real que priorizan velocidad.</p>
+          </div>
+          <span class="accordion-icon">+</span>
+        </div>
+        <div class="accordion-content">
+          <div class="accordion-body">
+            <div class="content-section">
+              <h3>Familia TCP - Transmission Control Protocol</h3>
+
+              <div class="highlight-box">
+                <strong>Protocolo Orientado a Conexión</strong><br>
+                TCP establece conexión confiable mediante Three-Way Handshake (SYN → SYN-ACK → ACK), garantizando integridad en la comunicación empresarial.
+              </div>
+
+              <h4>Características Técnicas Avanzadas</h4>
+              <div class="tech-specs">
+                <div class="spec-item">
+                  <strong>Control de Flujo:</strong><br>
+                  • Ventana deslizante para optimizar throughput<br>
+                  • Regulación según capacidad del receptor<br>
+                  • Prevención de saturación de buffers
+                </div>
+                <div class="spec-item">
+                  <strong>Control de Congestión:</strong><br>
+                  • Algoritmos: Slow Start, Congestion Avoidance<br>
+                  • Detección automática de congestión<br>
+                  • Adaptación dinámica a condiciones de red
+                </div>
+              </div>
+
+              <h4>Aplicaciones Empresariales TCP</h4>
+              <ul>
+                <li><strong>Servicios Web:</strong> HTTP (Puerto 80), HTTPS (Puerto 443) con IIS</li>
+                <li><strong>Transferencia de Archivos:</strong> FTP (21), SFTP (22) para datos críticos</li>
+                <li><strong>Correo Electrónico:</strong> SMTP (25/587), IMAP (143/993), POP3 (110/995)</li>
+                <li><strong>Acceso Remoto:</strong> RDP (3389), SSH (22) para administración</li>
+              </ul>
+
+              <h3>Familia UDP - User Datagram Protocol</h3>
+
+              <div class="highlight-box">
+                <strong>Protocolo Sin Conexión</strong><br>
+                UDP prioriza velocidad sobre confiabilidad con datagramas de solo 8 bytes de header, ideal para aplicaciones de tiempo real.
+              </div>
+
+              <h4>Aplicaciones Críticas UDP</h4>
+              <ul>
+                <li><strong>DNS (Puerto 53):</strong> Resolución rápida de nombres de dominio</li>
+                <li><strong>DHCP (Puerto 67/68):</strong> Asignación automática de direcciones IP</li>
+                <li><strong>SNMP (Puerto 161/162):</strong> Monitoreo de dispositivos de red</li>
+                <li><strong>NTP (Puerto 123):</strong> Sincronización de tiempo con W32Time</li>
+                <li><strong>Streaming/VoIP:</strong> RTP para comunicaciones en tiempo real</li>
+              </ul>
+
+              <h4>Matriz Comparativa Técnica</h4>
+              <div class="tech-specs">
+                <div class="spec-item">
+                  <strong>TCP:</strong><br>
+                  ✓ Confiabilidad garantizada<br>
+                  ✓ Control de errores completo<br>
+                  ✗ Mayor overhead (20+ bytes)<br>
+                  ✗ Mayor latencia inicial
+                </div>
+                <div class="spec-item">
+                  <strong>UDP:</strong><br>
+                  ✓ Velocidad superior<br>
+                  ✓ Menor uso de recursos<br>
+                  ✗ Sin garantías de entrega<br>
+                  ✗ Sin control de orden
+                </div>
+              </div>
+
+              <h4>Criterios de Selección Estratégica</h4>
+              <p><strong>Usar TCP cuando:</strong> Los datos son críticos, se requiere integridad completa, el orden es importante, se tolera mayor latencia (bases de datos, transacciones financieras).</p>
+              <p><strong>Usar UDP cuando:</strong> La velocidad es prioritaria, se toleran pérdidas ocasionales, se requiere transmisión en tiempo real, se necesita eficiencia de ancho de banda (streaming, gaming, monitoreo).</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Sección 4: Medios de Transmisión -->
+      <div class="accordion-item">
+        <div class="accordion-header" onclick="toggleAccordion(3)">
+          <div>
+            <h3 class="accordion-title">Medios de Transmisión y Conectividad Física</h3>
+            <p class="accordion-intro">Arquitectura híbrida de medios guiados y no guiados. Desde fibra óptica para backbone hasta soluciones inalámbricas 5G. Optimización de rendimiento, confiabilidad y costos según aplicación específica.</p>
+          </div>
+          <span class="accordion-icon">+</span>
+        </div>
+        <div class="accordion-content">
+          <div class="accordion-body">
+            <div class="content-section">
+              <h3>Medios de Transmisión Guiados</h3>
+
+              <h4>Cable de Par Trenzado - La Base de la Conectividad</h4>
+              <div class="tech-specs">
+                <div class="spec-item">
+                  <strong>Cat 6A (Recomendado):</strong><br>
+                  • Ancho de banda: 500 MHz<br>
+                  • Velocidad: 10 Gbps hasta 100m<br>
+                  • Aplicación: Redes empresariales modernas
+                </div>
+                <div class="spec-item">
+                  <strong>Cat 8 (Futuro-Proof):</strong><br>
+                  • Ancho de banda: 2000 MHz<br>
+                  • Velocidad: 25/40 Gbps hasta 30m<br>
+                  • Aplicación: Data centers, conexiones server-to-server
+                </div>
+              </div>
+
+              <p><strong>Tipos por Blindaje:</strong> UTP para oficinas estándar (menor costo, mayor flexibilidad), STP para entornos industriales (protección EMI), FTP para entornos comerciales con interferencia moderada.</p>
+
+              <h4>Fibra Óptica - Backbone de Alto Rendimiento</h4>
+              <div class="highlight-box">
+                <strong>Transmisión por Pulsos de Luz</strong><br>
+                Reflexión total interna en núcleo de vidrio ultra puro, velocidad cercana a la velocidad de la luz, capacidad prácticamente ilimitada.
+              </div>
+
+              <div class="tech-specs">
+                <div class="spec-item">
+                  <strong>Monomodo (SMF):</strong><br>
+                  • Diámetro: 8-10 micrones<br>
+                  • Distancia: 40+ km sin repetidores<br>
+                  • Velocidad: 10-100+ Gbps<br>
+                  • Uso: Interconexión campus, enlaces WAN
+                </div>
+                <div class="spec-item">
+                  <strong>Multimodo OM4:</strong><br>
+                  • Diámetro: 50 micrones<br>
+                  • Distancia: 400m @ 10 Gbps<br>
+                  • Aplicación: Data centers modernos<br>
+                  • Conectores: LC, SC, MTP/MPO
+                </div>
+              </div>
+
+              <h4>Ventajas de la Fibra Óptica</h4>
+              <ul>
+                <li><strong>Ancho de Banda:</strong> Capacidad prácticamente ilimitada para crecimiento futuro</li>
+                <li><strong>Distancia:</strong> Alcances de kilómetros sin amplificadores</li>
+                <li><strong>Inmunidad EMI:</strong> Insensible a interferencias electromagnéticas</li>
+                <li><strong>Seguridad:</strong> Difícil interceptación, ideal para datos críticos</li>
+                <li><strong>Durabilidad:</strong> Vida útil superior a 25 años</li>
+              </ul>
+
+              <h3>Medios de Transmisión No Guiados</h3>
+
+              <h4>Tecnologías WiFi - Movilidad Empresarial</h4>
+              <div class="highlight-box">
+                <strong>WiFi 6 (802.11ax) - La Nueva Generación</strong><br>
+                Velocidades hasta 9.6 Gbps, eficiencia espectral mejorada con OFDMA, MU-MIMO avanzado, soporte para 6 GHz (WiFi 6E).
+              </div>
+
+              <div class="tech-specs">
+                <div class="spec-item">
+                  <strong>Planificación RF:</strong><br>
+                  • Site survey detallado<br>
+                  • Heat maps de cobertura<br>
+                  • Análisis de interferencias<br>
+                  • Capacity planning por zona
+                </div>
+                <div class="spec-item">
+                  <strong>Seguridad WiFi:</strong><br>
+                  • WPA3 (estándar más reciente)<br>
+                  • 802.1X con autenticación RADIUS<br>
+                  • Guest networks segregados<br>
+                  • Network Access Control granular
+                </div>
+              </div>
+
+              <h4>Microondas Terrestres - Enlaces Punto a Punto</h4>
+              <p><strong>Rango de Frecuencias:</strong> 1 GHz - 100 GHz con bandas principales: L (1-2 GHz), S (2-4 GHz), C (4-8 GHz), X (8-12 GHz), Ku (12-18 GHz), Ka (26.5-40 GHz).</p>
+
+              <p><strong>Aplicaciones Estratégicas:</strong> Enlaces backbone entre sucursales, bypass de operador para independencia de ISP, redundancia para conexiones primarias, conectividad rápida para sitios temporales.</p>
+
+              <div class="highlight-box">
+                <strong>Requisitos Técnicos:</strong><br>
+                • Línea de vista directa sin obstáculos<br>
+                • Torres o edificios con elevación adecuada<br>
+                • Antenas parabólicas direccionales de alta ganancia<br>
+                • Cálculo de zona de Fresnel para despeje óptimo
+              </div>
+
+              <h4>Comunicaciones Satelitales - Cobertura Global</h4>
+              <div class="tech-specs">
+                <div class="spec-item">
+                  <strong>LEO (Low Earth Orbit):</strong><br>
+                  • Altitud: 160-2,000 km<br>
+                  • Latencia: 20-50 ms<br>
+                  • Ejemplos: Starlink, OneWeb<br>
+                  • Velocidad: Hasta varios Gbps
+                </div>
+                <div class="spec-item">
+                  <strong>GEO (Geostationary):</strong><br>
+                  • Altitud: 35,786 km<br>
+                  • Latencia: 250-300 ms<br>
+                  • Cobertura: Un tercio de la Tierra<br>
+                  • Uso: Sitios remotos, backup
+                </div>
+              </div>
+
+              <h4>Tecnologías Celulares - 5G Empresarial</h4>
+              <ul>
+                <li><strong>5G:</strong> Velocidades hasta 20 Gbps, latencia 1-10 ms, edge computing</li>
+                <li><strong>4G LTE:</strong> Hasta 1 Gbps, latencia 30-50 ms, backup WAN confiable</li>
+                <li><strong>Aplicaciones:</strong> Conectividad de respaldo, sitios temporales, IoT, workforce móvil</li>
+              </ul>
+
+              <h4>Matriz de Selección de Medios</h4>
+              <div class="tech-specs">
+                <div class="spec-item">
+                  <strong>Redes LAN Corporativas:</strong><br>
+                  • Primario: Cat 6A para usuarios<br>
+                  • Backbone: Fibra OM4<br>
+                  • Inalámbrico: WiFi 6
+                </div>
+                <div class="spec-item">
+                  <strong>Interconexión Campus:</strong><br>
+                  • Primario: Fibra monomodo<br>
+                  • Respaldo: Microondas<br>
+                  • Emergencia: Enlaces redundantes
+                </div>
+              </div>
+
+              <div class="tech-specs">
+                <div class="spec-item">
+                  <strong>Conectividad WAN:</strong><br>
+                  • Primario: Fibra del proveedor<br>
+                  • Respaldo: Microondas/5G<br>
+                  • Emergencia: VSAT
+                </div>
+                <div class="spec-item">
+                  <strong>Sitios Remotos:</strong><br>
+                  • Primario: Microondas/VSAT<br>
+                  • Respaldo: Conectividad celular<br>
+                  • Local: WiFi para usuarios
+                </div>
+              </div>
+
+              <h4>Integración con Windows Server 2022</h4>
+              <div class="highlight-box">
+                <strong>Herramientas de Gestión Nativas:</strong><br>
+                • <strong>Get-NetAdapter:</strong> Lista todos los adaptadores de red<br>
+                • <strong>Test-NetConnection:</strong> Pruebas de conectividad avanzadas<br>
+                • <strong>Performance Monitor:</strong> Métricas de throughput en tiempo real<br>
+                • <strong>NIC Teaming:</strong> Agregación de enlaces para redundancia
+              </div>
+
+              <p><strong>Capacidades Avanzadas:</strong> Soporte nativo para 1/10/25/40 Gbps Ethernet, integración con adaptadores 802.11ax, routing avanzado para múltiples interfaces, Virtual Switch para conectividad de VMs.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+
 
 </body>
 
