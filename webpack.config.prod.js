@@ -14,6 +14,7 @@ module.exports = merge(common, {
   plugins: [
     new HtmlWebpackPlugin({
       template: './index.html', // Archivo HTML base
+      inject: 'body', // Inyecta automáticamente el script en el body
     }),
     new CopyPlugin({
       patterns: [
