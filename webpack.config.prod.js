@@ -1,3 +1,4 @@
+const path = require('path');
 const { merge } = require('webpack-merge');
 const common = require('./webpack.common.js');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
@@ -5,9 +6,14 @@ const CopyPlugin = require('copy-webpack-plugin');
 
 module.exports = merge(common, {
   mode: 'production',
+  output: {
+    path: path.resolve(__dirname, 'dist'), // Carpeta donde se generará la build
+    filename: 'js/[name].[contenthash].js', // JS con nombre dinámico para cache
+    clean: true, // Limpia la carpeta dist antes de generar archivos
+  },
   plugins: [
     new HtmlWebpackPlugin({
-      template: './index.html',
+      template: './index.html', // Archivo HTML base
     }),
     new CopyPlugin({
       patterns: [
