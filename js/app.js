@@ -81,3 +81,6 @@ document.querySelectorAll('.accordion-item').forEach(item => {
     e.stopPropagation();
   });
 });
+
+// Exponer la función globalmente para que funcione en Vercel
+window.toggleAccordion = toggleAccordion;
