@@ -267,7 +267,7 @@ body {
 }
 
 .accordion-content.active {
-  max-height: 2000px;
+  max-height: 9999px;
 }
 
 .accordion-body {
@@ -329,11 +329,12 @@ body {
 
 
 /* Footer */
+
 .footer {
   background: linear-gradient(135deg, #0d47a1 0%, #1976d2 100%);
   color: #fff;
   text-align: center;
-  padding: 3rem 2rem;
+  padding: 1rem 1rem;
 }
 
 .footer-content {
@@ -351,15 +352,15 @@ body {
 
 .footer p {
   font-size: 1rem;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
   opacity: 0.9;
 }
 
 .footer-links {
   display: flex;
   justify-content: center;
-  gap: 2rem;
-  margin-bottom: 2rem;
+  gap: 3rem;
+  margin-bottom: 1rem;
 }
 
 .footer-links a {
@@ -374,8 +375,8 @@ body {
 
 .footer-bottom {
   border-top: 1px solid rgba(255, 255, 255, 0.2);
-  padding-top: 2rem;
-  margin-top: 2rem;
+  padding-top: 1rem;
+  margin-top: 1rem;
   opacity: 0.8;
 }
 
